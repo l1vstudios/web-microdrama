@@ -1,0 +1,57 @@
+.drado-auth-loading{min-height:100dvh;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:13px;background:#f7f7f7;color:#888;font-size:12px}.drado-auth-loading>strong{font-family:Manrope,sans-serif;font-size:26px;color:#171717;letter-spacing:-1px}.drado-login-shell{min-height:100dvh;display:grid;place-items:center;padding:35px;background:#f4f4f4}.drado-login-card{width:min(1050px,100%);display:grid;grid-template-columns:1fr 1fr;background:#fff;border:1px solid #dedede;border-radius:0;overflow:hidden;box-shadow:0 18px 70px #00000007}.drado-login-form-panel{display:flex;flex-direction:column;padding:45px 48px;min-width:0}.drado-login-brand{display:flex;align-items:center;gap:13px;font-family:Manrope,sans-serif;font-size:29px;font-weight:800;letter-spacing:-1.4px;color:#171717}.drado-login-mark{display:grid;place-items:center;width:48px;height:50px;border-radius:0;background:#171717;color:#fff;transform:rotate(-5deg);flex-shrink:0}.drado-login-brand small{display:block;margin-top:6px;font-family:'DM Sans',sans-serif;font-size:9px;letter-spacing:1.8px;font-weight:550;color:#999}.drado-login-intro{margin-top:58px}.drado-login-intro>span{font-size:9px;letter-spacing:1.7px;color:#aaa}.drado-login-intro h1{font-family:Manrope,sans-serif;font-size:29px;letter-spacing:-1.1px;line-height:1.4;font-weight:650;color:#222;margin:11px 0 10px}.drado-login-intro p{font-size:12px;line-height:1.9;color:#999;max-width:290px}.drado-login-form{margin-top:31px}.drado-login-form>label{display:flex;flex-direction:column;gap:9px;font-size:11px;font-weight:500;color:#555;margin-bottom:20px}.drado-login-form input{display:block;width:100%;height:45px;padding:11px 13px;border:1px solid #ddd;border-radius:0;color:#333;font-size:12px;background:#fff;outline:none}.drado-login-form input::placeholder{color:#bbb;font-size:11px}.drado-login-form input:focus{border-color:#777;box-shadow:0 0 0 2px #17171708}.drado-login-password{position:relative;display:block}.drado-login-password>input{padding-right:45px}.drado-login-password>button{position:absolute;right:5px;top:5px;display:grid;place-items:center;width:35px;height:35px;color:#999;border-radius:0}.drado-login-password>button:hover{color:#222;background:#f4f4f4}.drado-login-submit{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#171717;color:#fff;border-radius:8px;min-height:46px;padding:12px 15px;margin-top:27px;font-size:12px}.drado-login-submit:hover:not(:disabled){background:#000}.drado-login-error{font-size:11px;line-height:1.8;color:#444;padding:11px 12px;border:1px solid #ccc;border-radius:0;background:#f4f4f4;margin:8px 0}.drado-login-notice{font-size:11px;color:#777;line-height:1.8;border:1px solid #ddd;border-radius:0;padding:11px 12px;margin:8px 0}.drado-login-notice button{font-size:10px;color:#333;text-decoration:underline;text-underline-offset:3px;padding:6px 0 0}.drado-login-footer{display:flex;align-items:center;gap:7px;margin-top:43px;color:#aaa;font-size:9px}.drado-login-showcase{display:flex;flex-direction:column;justify-content:space-between;background:#171717;padding:37px 40px;color:#fff;min-width:0}.drado-login-studio-label{display:flex;align-items:center;gap:8px;font-size:10px;letter-spacing:1.4px;color:#bbb}.drado-login-showcase-copy{margin:0}.drado-login-showcase-copy>span{font-size:8px;letter-spacing:1.6px;color:#888}.drado-login-showcase h2{font-family:Manrope,sans-serif;font-size:39px;line-height:1.25;letter-spacing:-1.7px;font-weight:600;margin-top:16px}.drado-login-showcase-copy>p{color:#999;font-size:12px;line-height:1.9;margin-top:21px;max-width:320px}.drado-login-showcase-footer{font-size:11px;letter-spacing:1.6px;color:#fff}@media(max-width:900px){.drado-login-form-panel{padding:35px 30px}.drado-login-showcase{padding:32px 29px}.drado-login-showcase h2{font-size:33px}}@media(max-width:650px){.drado-login-shell{padding:20px;align-items:center}.drado-login-card{display:block;max-width:440px;border-radius:0}.drado-login-form-panel{padding:32px 26px}.drado-login-showcase{display:none}.drado-login-brand{font-size:27px}.drado-login-intro{margin-top:40px}.drado-login-intro h1{font-size:26px}.drado-login-footer{margin-top:32px}.drado-login-form input{font-size:16px}}
+
+.drado-login-brand,
+.drado-login-intro,
+.drado-login-form>label,
+.drado-login-submit,
+.drado-login-footer {
+  animation: drado-login-enter 650ms cubic-bezier(.22, 1, .36, 1) both;
+}
+.drado-login-intro { animation-delay: 80ms; }
+.drado-login-form>label:nth-of-type(1) { animation-delay: 140ms; }
+.drado-login-form>label:nth-of-type(2) { animation-delay: 200ms; }
+.drado-login-submit { animation-delay: 260ms; }
+.drado-login-footer { animation-delay: 320ms; }
+.drado-login-form input,
+.drado-login-password>button,
+.drado-login-submit { transition: background 200ms ease, border-color 200ms ease, box-shadow 200ms ease; }
+.drado-login-submit>svg { transition: transform 250ms ease; }
+.drado-login-submit:hover:not(:disabled)>svg { transform: translateX(4px); }
+.drado-login-showcase { gap: 24px; }
+.drado-login-slider { display: grid; min-height: 270px; align-items: center; }
+.drado-login-slide {
+  grid-area: 1 / 1;
+  min-width: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(16px);
+  pointer-events: none;
+  transition: opacity 550ms ease, transform 650ms cubic-bezier(.22, 1, .36, 1), visibility 550ms;
+}
+.drado-login-slide.active { opacity: 1; visibility: visible; transform: translateX(0); pointer-events: auto; }
+.drado-login-mark { border-radius: 13px; }
+.drado-login-slide.active .drado-login-showcase-copy { animation: drado-login-enter 750ms cubic-bezier(.22, 1, .36, 1) 100ms both; }
+.drado-login-feature-controls { display: flex; align-items: center; justify-content: space-between; }
+.drado-login-feature-pages { display: flex; gap: 8px; }
+.drado-login-feature-pages>button { border: 1px solid #444; padding: 8px 12px; color: #888; font-size: 9px; transition: color 200ms ease, background 200ms ease, border-color 200ms ease; }
+.drado-login-feature-pages>button.active { border-color: #fff; background: #fff; color: #171717; }
+.drado-login-feature-pages>button:hover { border-color: #aaa; }
+.drado-login-feature-pause { display: grid; place-items: center; width: 31px; height: 31px; border: 1px solid #444; color: #aaa; }
+.drado-login-feature-pause:hover:not(:disabled) { color: #fff; border-color: #aaa; }
+.drado-login-showcase button:focus-visible { outline-color: #ddd; }
+@keyframes drado-login-enter {
+  from { opacity: 0; translate: 0 12px; }
+  to { opacity: 1; translate: 0 0; }
+}
+@media (max-width: 650px) {
+  .drado-login-card>.drado-login-showcase { display: flex; padding: 30px 26px; }
+  .drado-login-slider { min-height: 240px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .drado-login-shell *, .drado-login-shell *::before, .drado-login-shell *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .drado-login-slide { transform: none; }
+  .drado-login-submit:hover:not(:disabled)>svg { transform: none; }
+}

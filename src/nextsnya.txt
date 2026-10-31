@@ -1,0 +1,6 @@
+saya mau setelah generate assets itu langsung ke scene anchor dan tanpa shoots dll jadi semua manual lalu saya mau hilangkan input dialog jadi dialog itu bener bener dari per character PER-CHARACTER DIRECTION supaya ga ada kesalahan misal a bicara ke b tapi malah c bicara ke a jadi saya mau ini di tekankan supaya ga salah lalu di input itu juga bisa spasi dll lalu bisa tag helpers, dan di aciton karakter misal saya ketik bergumam maka bicaranya dalam hati lalu untuk smeua pilihan karakter props tempat itu dropdown yg rapih berikan fullcode
+
+
+Cannot find name 'parseDialogueLine'.ts(2304)
+any Cannot find name 'isKnownIntonationTag'.ts(2304)
+any perbaiki ini lalu sekalian total humans bisa di tambah dan dikurangi lalu bisa di pilih karaktermana saja yg akan masuk shoots itu

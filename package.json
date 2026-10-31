@@ -1,0 +1,37 @@
+{
+  "name": "morai",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "api": "cd ../morai-backend && bun run start",
+    "backend": "cd ../morai-backend && bun run start",
+    "bridge": "cd ../morai-backend && bun run start",
+    "db:migrate": "cd ../morai-backend && bun run migrate",
+    "dev": "vite",
+    "dev:api": "cd ../morai-backend && bun run dev",
+    "gemini:proxy": "GOP_COOKIE_SOURCE=browser GOP_BROWSER=auto ~/.venvs/gemini-webproxy/bin/gemini-webapi-proxy --host 0.0.0.0 --port 4982 --log-level INFO",
+    "gemini:image-bridge": "GIB_PORT=4983 GIB_TEXT_PROXY_URL=http://127.0.0.1:4982/openai/v1 ~/.venvs/gemini-webproxy/bin/python ~/Downloads/gemini_image_bridge.py",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "test": "bun test tests"
+  },
+  "dependencies": {
+    "iconsax-reactjs": "^0.0.8",
+    "lucide-react": "^1.45.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  }
+}

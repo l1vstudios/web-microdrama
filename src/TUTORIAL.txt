@@ -1,0 +1,28 @@
+FRONTEND
+cd morai
+npm run dev
+
+BACKEND BUN + HONO + POSTGRES
+cd ../morai-backend
+bun run migrate
+bun run start
+
+.env supports one of these names:
+OPENROUTER_API_KEY=sk-or-...
+API_KEY: sk-or-...
+
+Optional database env:
+DATABASE_URL=postgres://user:password@localhost:5432/microdrama_mora
+PGDATABASE=microdrama_mora
+
+Default models:
+TEXT  openai/gpt-5.6-luna
+IMAGE google/gemini-2.5-flash-image
+VIDEO alibaba/wan-3.0
+
+Cache hemat credit:
+LOCAL_RESPONSE_CACHE=1
+LOCAL_RESPONSE_CACHE_TTL_SECONDS=604800
+
+LOCAL_RESPONSE_CACHE menyimpan response identik di Postgres ai_response_cache.
+Cache hit lokal tidak memanggil OpenRouter, jadi tidak makan credit.
